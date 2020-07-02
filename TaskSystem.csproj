@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3D04025-BFD5-453D-B047-C8D04A224CCD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TaskSystem</RootNamespace>
+    <AssemblyName>TaskSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Datagrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Datetime.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NewFolder1\AboutForm.cs" />
+    <Compile Include="NewFolder1\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\AddEmployee.cs" />
+    <Compile Include="NewFolder1\AddEmployee.Designer.cs">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\Services\Class1.cs" />
+    <Compile Include="NewFolder1\CreateTeam.cs" />
+    <Compile Include="NewFolder1\CreateTeam.Designer.cs">
+      <DependentUpon>CreateTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\PermissionControl.cs" />
+    <Compile Include="NewFolder1\PermissionControl.Designer.cs">
+      <DependentUpon>PermissionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\ChangePassWord.cs" />
+    <Compile Include="NewFolder1\ChangePassWord.Designer.cs">
+      <DependentUpon>ChangePassWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\CreateNotes.cs" />
+    <Compile Include="NewFolder1\CreateNotes.Designer.cs">
+      <DependentUpon>CreateNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\CreateProject.cs" />
+    <Compile Include="NewFolder1\CreateProject.Designer.cs">
+      <DependentUpon>CreateProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\CreateTask.cs" />
+    <Compile Include="NewFolder1\CreateTask.Designer.cs">
+      <DependentUpon>CreateTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\DashboardMainForm.cs" />
+    <Compile Include="NewFolder1\DashboardMainForm.Designer.cs">
+      <DependentUpon>DashboardMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\load\Form1_splash.cs" />
+    <Compile Include="NewFolder1\load\Form1_splash.Designer.cs">
+      <DependentUpon>Form1_splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\Login_Form.cs" />
+    <Compile Include="NewFolder1\Login_Form.Designer.cs">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\MyProfile.cs" />
+    <Compile Include="NewFolder1\MyProfile.Designer.cs">
+      <DependentUpon>MyProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\Report.cs" />
+    <Compile Include="NewFolder1\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\SettingForm.cs" />
+    <Compile Include="NewFolder1\SettingForm.Designer.cs">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\TaskWaitinglist.cs" />
+    <Compile Include="NewFolder1\TaskWaitinglist.Designer.cs">
+      <DependentUpon>TaskWaitinglist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\Viewtask.cs" />
+    <Compile Include="NewFolder1\Viewtask.Designer.cs">
+      <DependentUpon>Viewtask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\ViewAllEmployees.cs" />
+    <Compile Include="NewFolder1\ViewAllEmployees.Designer.cs">
+      <DependentUpon>ViewAllEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\ViewAllProjectsForm.cs" />
+    <Compile Include="NewFolder1\ViewAllProjectsForm.Designer.cs">
+      <DependentUpon>ViewAllProjectsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\ViewAllTeams.cs" />
+    <Compile Include="NewFolder1\ViewAllTeams.Designer.cs">
+      <DependentUpon>ViewAllTeams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\ViewETasks.cs" />
+    <Compile Include="NewFolder1\ViewETasks.Designer.cs">
+      <DependentUpon>ViewETasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panelrounder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundedButtom.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RoundedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TasksTrackDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TasksTrackDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TasksTrackDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TasksTrackDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="NewFolder1\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\AddEmployee.resx">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\CreateTeam.resx">
+      <DependentUpon>CreateTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\PermissionControl.resx">
+      <DependentUpon>PermissionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\ChangePassWord.resx">
+      <DependentUpon>ChangePassWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\CreateNotes.resx">
+      <DependentUpon>CreateNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\CreateProject.resx">
+      <DependentUpon>CreateProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\CreateTask.resx">
+      <DependentUpon>CreateTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\DashboardMainForm.resx">
+      <DependentUpon>DashboardMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\load\Form1_splash.resx">
+      <DependentUpon>Form1_splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\Login_Form.resx">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\MyProfile.resx">
+      <DependentUpon>MyProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\SettingForm.resx">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\TaskWaitinglist.resx">
+      <DependentUpon>TaskWaitinglist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\Viewtask.resx">
+      <DependentUpon>Viewtask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\ViewAllEmployees.resx">
+      <DependentUpon>ViewAllEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\ViewAllProjectsForm.resx">
+      <DependentUpon>ViewAllProjectsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\ViewAllTeams.resx">
+      <DependentUpon>ViewAllTeams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\ViewETasks.resx">
+      <DependentUpon>ViewETasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TasksTrackDataSet.xsc">
+      <DependentUpon>TasksTrackDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TasksTrackDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TasksTrackDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TasksTrackDataSet.xss">
+      <DependentUpon>TasksTrackDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TasksTrackDataSet1.xsc">
+      <DependentUpon>TasksTrackDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TasksTrackDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TasksTrackDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TasksTrackDataSet1.xss">
+      <DependentUpon>TasksTrackDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\Model\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
